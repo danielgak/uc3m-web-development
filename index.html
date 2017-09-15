@@ -1,51 +1,85 @@
 <!doctype html>
 <html>
-    <head> 
-        <meta charset="utf-8">
-        <title> UI_practica1 </title>
-        <base href="/">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" type="text/css" href="styles.css">
-    </head>
-    <body>
-        <header class="recuadro estilocabecera">
-            <div class="navBar">
-                <!-- logo o imagen -->
-                <ul>    
-                    <li> <p>imagen</p></li>
-                    <li><h1 class="titulo">Titulo</h1></li>
-                    <li><a href="/"> Link1 </a></li>
-                    <li><a href="/"> Link2 </a></li>
-                    <li><a href="/"> Link3 </a></li>
-                </ul>
-            </div>
-        </header>
-        <div class="content">
-            <div class="personal_info">
-                <h2>Personal Information</h2>
-                <div class="conent_2">
-                    <div class="data"><h3>First & Last Name</h3> <p>Luis Suarez</p></div>
-                    <div class="data"><h3>Birthday</h3><p>14/03/83</p></div>
-                    <div class="data"><h3>Photo</h3><p>path</p> <!-- img --></div>
-                    <div class="data"><h3>e-mail</h3><p>luissuarez@mail.es</p></div>
-                    <div class="data"><h3>language</h3><p></p>español</div>
+<head> 
+
+    <meta charset="utf-8">
+    <title> UI_practica1 </title>
+    <base href="/">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+
+</head>
+<body>
+
+    <!-- CABECERA -->
+
+    <header class="">
+        <nav>
+            <ul class="nav">
+            <li><a href="#M"> <img class="logo-nav" src="assets/logo.png"></a></li>
+            <li><a href="#personal-info">Personal Information</a></li>
+            <li><a href="#billing-info">Billing Information</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- CUERPO -->
+    <section class="main">
+        <section class="articles">
+            
+              <article id="M" class="content_box intro_content_box">
+                <div class="container">  
+                  <div id="element">
+                    <h2>I N T R O D U C C I Ó N</h2>
+                    <img class="logo-main" src="assets/logo.png" alt="M">
+                  </div>
                 </div>
-            </div>
-            <div class="billing_info">  
-                <h2>Billing Information</h2>
-                <div class="conent_2">
-                    <div class="data"><h3>Address</h3><p> calle la que sea</p></div>
-                    <div class="data"><h3>Payment method</h3><p> credit card</p></div>
-                    <div class="data"><h3>Number</h3><p>111 111 111</p></div>
-                    <div class="data"><h3>Valid Thru</h3><p>05 / 25</p></div>
-                    <div class="data"><h3>Code</h3><p>125</p></div>
+              </article>
+
+              <article id="personal-info" class="content_box personal_content_box">
+                <div class="container">  
+                  <div id="element">
+                    <h2>Personal Information</h2>
+                                <!-- TODO: div class="">
+                                    <div class="">
+                                        <div class="data"><h3>First & Last Name</h3> <p>Luis Suarez</p></div>
+                                        <div class="data"><h3>Birthday</h3><p>14/03/83</p></div>
+                                        <div class="data"><h3>Photo</h3><p>path</p></div>
+                                    </div>
+                                    <div>
+                                        <div class="data"><h3>e-mail</h3><p>luissuarez@mail.es</p></div>
+                                        <div class="data"><h3>language</h3><p></p>español</div>
+                                    </div>
+                                </div-->
+                  </div>
                 </div>
-            </div>
-        </div>
-        <footer class="">
-            <a href="/"> Link1 </a>
-            <a href="/"> Link2 </a>
-            <a href="/"> Link3 </a>
-        </footer>
-    </body>
+              </article>
+              
+              <article id="billing-info" class="content_box billing_content_box">
+                <div class="container">  
+                  <div id="element">
+                    <h2>Billing Information</h2>
+                                <!-- TODO: h2>Billing Information</h2>
+                                    <div class="conent_2">
+                                        <div class="data"><h3>Address</h3><p> calle la que sea</p></div>
+                                        <div class="data"><h3>Payment method</h3><p> credit card</p></div>
+                                        <div class="data"><h3>Number</h3><p>111 111 111</p></div>
+                                        <div class="data"><h3>Valid Thru</h3><p>05 / 25</p></div>
+                                        <div class="data"><h3>Code</h3><p>125</p></div>
+                                    </div-->
+                  </div>
+                </div>
+              </article>
+
+        </section>
+        
+    </section>
+    
+    <!-- PIE --> 
+    <footer>
+        <a href="/">  <img class="fb" src="assets/facebook.png" > </a>
+        <a href="/">  <img class="inst" src="assets/instagram.png" > </a>
+        <a href="/">  <img class="tw" src="assets/twitter.png" > </a>
+    </footer>
+</body>
 </html>

@@ -1,5 +1,158 @@
-.navBar ul{
+
+/* COLORES QUE CREO QUE ME GUSTAN:
+    E5E5E5
+    E07A5F
+    3D405B
+    81B29A
+    F2CC8F
+*/
+
+/* Estilo inicial */
+
+body { 
+    position: relative;
+    top: 50px;
+    font-family: "avenir";
+    font-size: 20px;
+    margin: 0;
+    color: #ff0024;
+    background-color: #f1f1f1;
+    
+    
+    line-height: 1;
+}
+
+/* Barra de navegación */
+
+nav ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
+    overflow: hidden;
+    position: fixed;
+    top:0px;
+    /*TRNASPARENCY*/
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+    filter: alpha(opacity=80);
+    -moz-opacity: 0.80;
+    -khtml-opacity: 0.8;
+    opacity: 0.8;
+    /* */
+    width: 100%;
+    background-color: #f1f1f1;
+    overflow-x: hidden;
+}
+
+nav ul li {
+  float: left;
+}
+
+nav ul li a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+nav ul li a:hover{
+    background-color: white;
+}
+
+nav ul li a:active{
+    background-color: white;
+}
+
+.logo-nav{
+    width: 16px; /* TO DO */
+    height: auto;
+}
+
+
+/* CONTENIDO BÁSICO*/
+
+
+/* Realiza una caja grande que ocupa toda la pantalla */
+.container{ 
+    height: 100%;
+    text-align: center;  
+}
+
+/* Truco para alinear verticalmente*/
+.container:before{
+    content: ' ';
+    display: inline-block;
+    vertical-align: middle;  /* vertical alignment of the inline element */
+    height: 100%;
+}
+#element{
+    display: inline-block;
+    vertical-align: middle;  /* vertical alignment of the inline element */
+}
+
+.main .articles{
+    width: 100%;
+    height: 100%;
+
+}
+
+/* CONTENIDO DETALLADO */
+.logo-main{
+    width: 100%;
+    height: auto;
+    max-width: 400px;
+}
+
+.content_box{
+
+    padding-top:0;
+    margin:0;
+    background-color:white;
+    width: 100vw;
+    height: 100vh;
+}
+
+.intro_content_box{
+    background-color: #f1f1f1;
+    padding-top:-50px;
+}
+
+.personal_content_box{
+ 
+}
+
+.billing_content_box{
+    background-color: #f1f1f1;
+    width: 100%;
+    padding-top:-50px;
+}
+
+
+/* footer */
+footer {
+    text-align: center;
+}
+
+footer a{
+    margin-right: 10%;
+    margin-left: 10%;
+    text-decoration: none;
+    color: black;
+
+}
+
+#clouds {
+    background-color: white;
+}
+
+.fb{
+    width: 22px;
+}
+
+.inst{
+    width: 30px;
+}
+
+.tw{
+    width: 25px;
 }
